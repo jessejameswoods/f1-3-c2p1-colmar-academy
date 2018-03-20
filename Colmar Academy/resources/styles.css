@@ -1,0 +1,427 @@
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #01161E;
+}
+
+main {
+  font-family: "Open Sans", sans-serif;
+  position:relative;    /* handle fixed menu bar */
+  top: 4rem;
+  color: #01161E;
+}
+
+
+section {
+  width: auto 0;
+}
+
+a {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  padding-left: 1rem;
+  color: #01161E;
+  font-size: 1.25rem;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.1;
+  color: #4a4a4a;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 2rem 0;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+h5, footer span {
+  font-size: 0.8rem;
+  color: #01161E;
+}
+
+p {
+  line-height: 1.35;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+video {
+  margin:auto;
+}
+
+
+/* Header Section */
+
+header {
+    background-color: white;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+}
+
+header img {
+  height: 3rem;
+  padding: 0 2% 0 1.5rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-bar {
+  color: #8A97A8;
+  text-transform: uppercase;
+}
+
+.title-bar span {
+  padding: 0;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+/* Navigation */
+
+nav {
+  padding-right: 3%;
+  align-self: center;
+  display: flex;
+}
+
+.desktop {
+  display: inline-block;
+}
+
+.mobile {
+  display: none;
+}
+
+/* Learning Section */
+
+.text-block {
+  display: inline-flex;
+  flex-flow: column;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+
+
+.learning-section {
+    background-color: #d8d8d8;
+}
+
+.learning-section img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60%;
+  margin: 2rem 2.5rem 2rem 1.5rem;
+  flex-shrink: 0;
+}
+
+.learning-section h3 {
+    margin: 1.5rem 0;
+    color: #4a4a4a;
+}
+
+.learning-section .text-block {
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.learning-section p, .image-container p {
+    margin-bottom: 1.5rem;
+}
+
+/* Button */
+
+.button {
+  width: 75%;
+  background-color: #4a4a4a;
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+  text-align: center;
+  transition:color 400ms, background-color 400ms;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: #4a4a4a;
+}
+
+.information .text-container:hover, .thesis .text-container:hover {
+  background-color: #d8d8d8;
+  cursor: pointer;
+}
+
+/* Containers */
+
+.multi-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.image-container {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.image-container img, video {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.image-container h2 {
+  padding: 0 0 1.5rem 0;
+}
+
+#mobile-image {
+  display: none;
+}
+
+.stacked-text-container {
+  display: flex;
+  flex-flow: column;
+  vertical-align: top;
+  margin-top: 1rem;
+  width: 35%;
+}
+
+.text-container img {
+  width: 35%;
+  margin: 3.5%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.text-container .text-block {
+  width: 56%;
+}
+
+.text-container a {
+  color: #649ee4;
+  padding: 0;
+}
+
+.thesis .image-container {
+  padding: 1rem 1rem 1.5rem 1.5rem;
+}
+
+
+/* Courses Section */
+
+.courses {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  background-color: #eaebec;
+}
+
+.course-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.course-card {
+  width: 30%;
+  height: auto;
+  margin: 0 0.5rem 1rem 0.5rem;
+  background-color: #ffffff;
+}
+
+.courses h2, .thesis h2 {
+  text-align: center;
+}
+
+.course-card img {
+  width:100%;
+}
+
+.course-description {
+  padding: 1rem 0 0 1rem;
+  margin: 1.5rem auto;
+}
+
+.course-card:hover {
+  background-color: #d8d8d8;
+  cursor: pointer;
+}
+
+/* Footer Section*/
+
+footer {
+  background-color: white;
+  border-top: 1px solid #01161E;
+  display: flex;
+  justify-content: space-between;
+  position:relative;    /* handle fixed menu bar */
+  top: 4rem;
+  width: 100%
+}
+
+footer h5 {
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+footer nav {
+  align-self: auto;
+  padding-top: 1rem;
+}
+
+footer span {
+  padding-left: 1rem;
+}
+
+/* Tablet Responsive Media Queries*/
+
+@media only screen and (max-width:825px) {
+
+  .learning-section img, .image-container {
+    width: 40%;
+  }
+  .learning-section .text-block, .stacked-text-container {
+    width: 45%;
+  }
+  .course-card {
+    width: 45%;
+  }
+
+}
+
+/* Mobile Responsive Media Queries */
+
+@media only screen and (max-width:470px) {
+
+/* Don't Display */
+
+footer nav, .desktop, .logo, .information .image-container,
+.thesis .stacked-text-container, .thesis p, .thesis h3, .course-card img,
+.course-card p, #desktop-image {
+  display: none;
+}
+
+/* Mobile Header */
+
+.mobile {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.mobile img {
+  width: auto;
+  height: 90%;
+}
+
+/* Mobile Learning Section */
+
+.button {
+  width: 100%;
+  align-self: center;
+}
+
+.learning-section img {
+  width: 90%;
+  padding: 2rem 1rem;
+  margin: auto;
+}
+
+.learning-section .text-block {
+  width: 100%;
+  padding: 0 1rem;
+  margin: auto;
+}
+
+/* Mobile Information Section */
+
+.stacked-text-container, .text-container .text-block{
+  width: 100%;
+  background-color: white;
+}
+
+.text-container {
+  display: flex;
+  flex-flow: column;
+}
+
+#mobile-image {
+  display: block;
+  box-sizing: border-box;
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.text-container img {
+  width: 100%;
+  margin: auto;
+  background-color: white;
+}
+
+.text-container .text-block {
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.text-container a {
+  font-size: 1rem;
+}
+
+/* Mobile Courses Section */
+
+.courses {
+  border-top: 1px solid #8A97A8;
+  border-bottom: 1px solid #8A97A8;
+}
+
+.course-container {
+  flex-flow: column;
+}
+
+.course-card {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0 0 0.5rem 0;
+}
+
+.course-description {
+  padding: 1rem;
+}
+
+/* Mobile Thesis Section */
+
+.thesis .image-container {
+  width: 100%;
+  padding: 0 0 2rem 0;
+}
+
+/* Mobile Footer */
+
+h5 {
+  margin: 1.5rem 0 0 0;
+}
+
+}
